@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/laptop.icon.png" type="image/x-icon"> <!--adicionar um icon ao seu site-->
+    <title>Modulo 01 de CSS e HTML</title>
+</head>
+
+<body>
+
+    <h1>Primeiros passos no HTML:</h1>
+
+    <hr>
+
+    <h2> Paragrafos e quebras de linha: </h2>
+
+    <p>• Você pode escrever um paragrafo colocando em um par de tags &lt;p&gt; e &lt;/p&gt;
+        <!--lessthan--><!--greater then-->
+    </p>
+
+    <p>• Se precisar quebrar o texto em algum lugar especifico <br> como esse você pode usar a tag &lt;br&gt;
+    </p>
+
+    <hr>
+
+    <h2> Simbolos e emojis: </h2>
+
+    <p> •Voce pode adicionar simbulos especificos como: </p>
+
+    <br>
+    &reg;,
+    &copy;,
+    &trade;,
+    &euro;,
+    &pound;,
+    &yen;,
+    &cent;,
+    &uarr;,<!--uparrow-->
+    &darr;,<!--downarrow-->
+    &delta;, ou &Delta;
+
+
+    <p> • Você pode adicionar emojis com a tag "&#x" + o codigo do emoji, pegando no site
+        <a href="https://emojipedia.org/">emojipedia.</a>
+    </p>
+
+    Exemplo:
+    <br>
+    &#x1f91e;
+    &#x1f913;
+    &#x1f499;
+    <hr>
+
+
+    <h2>Imagens:</h2>
+
+    <p> • É possivel adicionar Imagens com a tag &lt;img&gt; de 2 formas:
+    </p>
+
+    <ul type="circle">
+        <li> Puxar a imagem direto da pasta com o ctrl + espaço: </li>
+        <img src="Imagens/css-3.png" alt="Logo CSS3" wridth="100" height="129">
+
+
+        <li> Puxar a imagen direto do URL do site: </li>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/768px-HTML5_Badge.svg.png?20110131171049"
+            alt="Logo HTML" wridth="88" height="120">
+    </ul>
+    <hr>
+
+    <h2>Principais formatações:</h2>
+
+    <h3>Negrito/destaque:</h3>
+
+    <p>• Para deixar algo em negrito, se usa a <b>tag: &lt;b&gt;</b>, porem ela é uma
+        tag não semantica, e sim estetica.</p>
+
+    <p>• Para deixar em destaque algo semantico (com importancia), se usa a <strong>
+            tag &lt;strong&gt;</strong></p>
+
+
+    <h3>Italico/ênfase:</h3>
+
+    <p>• Para deixar algo em italico usamos a <i>tag &lt;i&gt;</i>,porem não é semantico</p>
+
+    <p>• Para deixar em ênfase algo semantico (com importancia), <em>se usa a tag &lt;em&gt;</em></p>
+
+    <p>• Dica: para adicionar formatações em locais diferentes, digite Ctrl+shift+P e selecione
+        "emmet: envolver com abreviação" em seguida coloque a tag da formatação desejada e aperte Enter.</p>
+
+
+    <h3>Texto marcado:</h3>
+
+    <p>• Você pode deixar uma parte do seu texto marcado com a <mark style="background-color: lime;">
+            tag &lt;mark&gt;</mark></p> <!--"style=background" é uma tag em CSS-->
+
+
+    <h3>Texto pequeno:</h3>
+
+    <p>• Você pode deixar seu texto com as letras menores <small>com a tag &lt;small&gt;</small></p>
+
+
+    <h3>Texto inserido e texto deletado:</h3>
+
+    <p>•Texto inserido: Usado para dar enfase que foi adicionado depois. <ins>Basta usar a tag &lt;ins&gt;</ins> </p>
+
+    <p>•Texto deletado: Usado para indicar que deve ser lido mas não considerado. <del>Basta usar a tag
+            &lt;del&gt;</del> </p>
+
+
+    <h3>Sobrescrito e Subscrito</h3>
+
+    <p>•Sobrescrito: Para escrever coisas tipo: x<sup>20</sup>+3. Com a tag &lt;sup&gt; </p>
+
+    <p>•Subescrito: Para escrever coisas do tipo: H<sub>2</sub>O. Com a tag &lt;sub&gt;</p>
+
+
+    <h3>Outras formatações</h3>
+
+    <p>•Você pode escrever a tag &lt;code&gt;, para adicionar fonte monoespaçada.fica melhor para ler codigos no geral.
+    </p>
+    Exemplo:
+    <code>
+                         <p>document.getElementById('teste')</p> <!--codigo em JavaScript-->
+                     </code>
+
+    <p>•Você pode escrever a tag &lt;pre&gt;, somando com a tag acima, para editar tanto codigos quanto informações no
+        geral. </p>
+    Exemplo:
+    <pre>
+                         <code>
+    num = int(input('digite um numero')) <!--codifgo em phyton-->
+    if num % 2 == 0:
+        print(f'O numero {num} é PAR')
+    else:
+        print (f'O numero {num} é IMPAR')
+    print('fim do programa')
+                         </code>
+                     </pre>
+
+
+    <h3>Citações:</h3>
+
+    <p>• Para indicar uma sitação simples, porem semantico, usamos a tag &lt;q&gt; </p>
+    Exemplo:
+    <p><q>Como diria um amigo meu: O computador é um burro muito rápido.</q></p>
+
+
+    <p>• Para indicar uma citação completa, e semantica, usamos a tag &lt;blockquote cite=&gt;</p>
+    Exemplo:
+    <p>Como diaria José Augusto N. G. Menzano no seu livro:</p>
+    <blockquote
+        cite="https://www.google.com.br/books/edition/Guia_de_Orienta%C3%A7%C3%A3o_e_Desenvolvimento_d/1YuwDwAAQBAJ?hl=pt-BR&gbpv=0">
+        "Antes de começar a criar um site, é preciso planejar a sua estrutura."</blockquote>
+
+    <h3>Abreviações</h3>
+
+    <p>• É possivel colocar siginificado em siglas abreviadas com a tag &lt;abbr title=""&gt; </p>
+    Exemplo:
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr
+            title="Cascading Style Sheets">CSS</abbr>.</p>
+
+
+    <h3>Texto invertido</h3>
+
+    <p>• É possivel inverter um texto com a tag &lt;bdo&gt;</p>
+    Exemplo:
+    <p><bdo dir="rtl">O rato roeu a roupa dp rei de roma</bdo></p>
+    <hr>
+
+
+    <h2>Listas:</h2>
+
+    <h3>Listas ordenadas:</h3>
+    <p>Usada para listar coisas em ordem</p>
+    <ol type="I"> <!--Tipos:1,A,a,I,i-->
+        <li>Acordar</li>
+        <li>Tomar cafe</li>
+        <li>Escovar os dentes</li>
+        <li>Estudar</li>
+        <li>Praticar um esporte</li>
+
+    </ol>
+
+
+    <h3>Listas não ordenadas:</h3>
+    <p>Usada para listar coisa sem ordem</p>
+    <ul type="square"> <!--Tipos:disc, circle, square-->
+        <li>Pão</li>
+        <li>Café</li>
+        <li>Arroz</li>
+        <li>Tomate</li>
+    </ul>
+
+
+    <h3>Lista de Definição:</h3>
+    <p>Usada para busca de termo e definição</p>
+    <dl>
+        <dt>HTML:</dt>
+        <dd>Linguagem de marcação para o coteúdo de um site.</dd>
+
+        <dt>CSS:</dt>
+        <dd>Linguagem de marcação para o design de um site.</dd>
+
+        <dt>JavaScript:</dt>
+        <dd>Lingagem de programação para a criação de interatividade de um site</dd>
+    </dl>
+
+    <hr>
+
+    <h2>Links e Âncoras</h2>
+
+    <h3>Links externos</h3>
+    <p>Vôce pode adicinar links externos no seu site</p>
+    Exemplo:
+    <p>Eu aprendi a colocar links atraves do <a href="https://www.cursoemvideo.com/cursos/" target="_blank"
+            rel="nofollow">curso em video</a></p> <!--Usar o "_blank" para links externos-->
+
+
+    <h3>Links internos</h3>
+    <p>Você pode adicionar links internos</p>
+    Exemplo:
+    <p>Siga para <a href="pag002.html" rel="next" target="_self">outra pagina</a></p>
+
+
+    <h3>Links para downloads</h3>
+    <p>Você pode adicionar links para downloads</p>
+    Exemplo:
+    <ul>
+        <li> <a href="Livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf"
+                type="application/pdf">Livro para download</a> do capitulo 10 do curso em video. </li>
+
+        <li> <a href="Livro/10 - Ligações em toda parte.rar" download="download 10 - Ligações em toda parte.rar">
+                Livro para download compactado</a> do capitulo 10 do curso em video. </li> <!--para aprender a usar o "type"
+                        basta acessar ao site de lista de type de acordo com o tipo de download-->
+
+    </ul>
+    <hr>
+
+
+    <h2>Imagens dinamicas:</h2>
+
+    <p>Podemos adicionar imagens que se adaptam de acordo com a tela do usuario com a tag
+        &lt;picture&gt;</p>
+    Exemplo: <br>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/imgP.png">
+        <source media="(max-width: 1050px)" srcset="Imagens/imgM.png">
+        <img src="Imagens/imgG.png" alt="imagem flexivel">
+        <!--sempre seguindo a ordem de G,M,P-->
+    </picture>
+
+    <hr>
+
+    <h2>Adicionar audio:</h2>
+
+    <p>Podemos adicionar a reprodução de audio no seu site de duas formas:</p>
+    <!--tipos: MP3, WAV, OGG-->
+
+    <h3>Modo simples:</h3>
+    <p>Com a tag &lt;audio src=&gt;</p>
+    Exemplo: <br>
+
+    <audio src="Audio/Zameen - Movement of Earth - Aakash Gandhi.mp3" controls autoplay></audio>
+    <!--Controls: para aparecer os controles de audio-->
+    <!--Autoplay: para inciar a musica assim que entrar no site-->
+    <!--Loop: para colocar a musica em loop-->
+    <h3>Modo abrangente:</h3>
+    <p>Com a tag &lt;audio source src=&gt; tambem, porem adicionando os outros formatos de audio</p>
+    Exemplo: <br>
+
+    <audio preload="metadata" autoplay controls loop>
+        <!--Temos 3 tipos de preload: Auto(Carregar automaticamente,e não recomendado),Metadata(carrega as informações
+                         mas não o audio) e o None (Não carrega nada.)-->
+        <source src="audio em MP3" type="audio/mpeg">
+        <source src="audio em ogg" type="audio/ogg">
+        <source src="audio em wav" type="audio/wav"> <!--Não aconselhado usar pelo tamanho pesado-->
+        <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="audio para download">
+                clique aqui para baixar o audio</a></p>
+        <!--vale lembrar que o site ira carregar os audios na ordem escrita-->
+    </audio>
+
+    <hr>
+
+    <h2>Adicionar videos:</h2>
+    <p>Podemos adicionar video de duas formas:</p>
+
+    <h3>Hospedagem local:</h3>
+    <p>Usando a tag&lt;video source src=&gt; </p>
+    Exemplo: <br>
+
+    <video width="560" poster="Caso queira adicionar uma tamb" controls>
+        <source src="Videos/kombi.(540p).mp4" type="video/mp4">
+        <source src="Videos/Kombi.(540P).webm" type="video/webm">
+    </video>
+
+    <h3>Hospedagem externa:</h3>
+    <p>Copiando os dados de hospedagem:</p>
+    Exemplo: <br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=qpThaztnGyQB3jr6"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+
+    <hr>
+</body>
+
+</html>

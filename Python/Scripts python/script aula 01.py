@@ -1,0 +1,21 @@
+nome=input('Qual é o seu nome?')
+idade=input('Qual é a sua idade?')
+peso=input('Qual é o seu peso?')
+print('qual a sua data de nascimento:')
+dia=input('dia?')
+mes=input('mes?')
+ano=input('ano?')
+print('Digite dois numeros de sua preferencia:')
+n1 = input('Digite o primeiro número: ')
+n2 = input('Digite o segundo número: ')
+n1 = int(n1)
+n2 = int(n2)
+soma = n1 + n2
+print('Olá', nome, ',Prazer em te conhecer!!')
+print('A sua idade é', idade)
+print('O seu peso é', peso, 'Kg')
+print('Seu aniversario é dia',dia, 'de',mes, 'de', ano)
+print('A soma entre o' ,n1, 'e o', n2, 'é:', soma)
+print('As informações estão corretas?')
+
+

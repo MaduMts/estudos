@@ -1,0 +1,158 @@
+
+@charset "UTF-8";
+  
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'
+); /*Exemplo de fonte externa*/
+  
+@font-face {
+    font-family: 'Minha fonte';
+    src: url('fontes/DisplayOTF.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    } /*Exemplo de fonte interna*/
+    
+    *{
+        font-family: 'Work Sans';
+    }
+  
+    body {
+        background-image: linear-gradient(to bottom,#FF8658, #CC5948); /*Fazer degrade*/
+    }
+  
+    main{
+        background-color: white; /*cor de fundo*/
+        border-radius: 10px;  /*Arredondar as bordas*/
+        box-shadow:5px 5px 15px #ba6341; /*adicionar sombras*/
+        width: 600px; /*controla a largura de um elemento*/
+        padding: 10px; /*controla o espaço entre o conteúdo interno de um elemento e sua borda.*/
+        margin: auto /*sua caixa fica automaticamente no meio*/
+    }
+
+
+    h1{
+        font-family: 'Minha fonte';
+        color: #858D99;
+        background-color:#77F2FF;
+        border-radius: 10px;
+        text-align: center; /*usado para alinhar o texto dentro de um elemento em relação ao eixo horizontal*/
+        text-shadow: 1px 1px 2px #2d4b7c; /*sombra*/
+    }
+    
+    h2{
+        color: #77F2FF;
+        background-color: #858D99;
+        border-radius: 10px;
+    }
+  
+    h3{
+        border-radius: 10px;
+        background-color: #4B7CCC; color: white;
+    }
+
+    p{
+        text-indent: 20px;
+    } /*para dar espaço no paragrafo*/
+    
+    
+    
+    
+    /*Ensinamentos do capitulo 15:*/
+    /*seletores personalizados:*/
+
+    /*classes e identificação:*/
+    h2#exemplo {
+        color: black
+    }/*marcaçao de uma tag especifica*/
+
+    .exemplo {
+        color: #77F2FF;
+    }
+
+    .importante {
+        font-weight: bold;
+    }
+
+   
+
+    /*pseudo-casses:*/
+    
+    .classes:hover {
+        color: yellow;
+    } /*exemplo de pseudoclasses sendo aplicada com e sem div*/
+    
+    div:hover {
+        color: red;
+    } /*quando passar o mouse deixa com a cor vermelho*/
+
+    div > p {
+        display: none;
+    } /*diz que existe um paragrafo dentro da div que não é pra ser mostrado*/
+
+    div:hover > p {
+        display:block;
+        color: red;
+    } /*quando passar o mouse é pra mostrar o paragrafo escondido quando passar o mouse*/
+
+    div:active{
+        color: yellow;
+    } /*quando clicar muda de cor*/
+
+    
+    /*pseudos-elementos:*/
+
+    .elementos::before{
+        content: '»';
+    }
+    .elementos::after{
+        content:'«';
+    }
+
+
+
+   
+    /*ensinamentos do capitulo 16*/
+    /*Caixas:*/
+
+    /*Box-level*/
+    h5{
+        font-size: 32px;
+        font-weight: bolder;
+        background-color: lightgray;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%; /*essa configuração forma uma caixa redonda*/
+    
+        border-width: 10px;
+        border-style: solid;
+        border-color: white;
+
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+
+        outline-width: 10px;
+        outline-style: dashed;
+        outline-color: red;
+
+        display: flex; /* Adiciona a propriedade flexbox */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        text-align: center; /* Alinha o texto ao centro */
+    }/*É possivel fazer um shorthands com as configurações da borda, seguindo essa exata ordem que foi escrita.*/
+
+
+    /*Iline-level*/
+    a{
+        /*DICA: display: block; -> Isso transforma a caixa inline em box. Pode aplicar o inline no box tambem.*/
+        border-width: 10px;
+        border-style: dotted;
+        border-color: aquamarine;
+    }
+
+   

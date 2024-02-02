@@ -1,0 +1,13 @@
+Cores:
+Sites pra ajudar a utilização de cores:
+
+Site para gerar ou copiar cores de um logo:
+- https://color.adobe.com 
+Pegar palhetas de cores prontas:
+- https://color.adobe.com/pt/explore
+
+Site pra gerar paletas, mas com exemplos aplicados em site:
+- https://paletton.com
+
+SIte com sugestões de paletas de cores:
+- https://coolors.co

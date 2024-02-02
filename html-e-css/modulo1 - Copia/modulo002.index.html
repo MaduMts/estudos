@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="midias/HTML5.ico" type="image/x-icon">
+    <title>Modulo 02 de CSS e HTML</title>
+    <link rel="stylesheet" href="style.css"> <!--Exemplo de estrutura externa-->
+
+    <style>
+        /*Exemplo de estrutura interna*/
+
+        h1 {
+            text-decoration: underline;
+            /*deixa o titulo sublinhado*/
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+        <h1 style="text-align:center ;"><!--Exemplo de estrutura inline-->
+            Primeiros passos no CSS:</h1>
+        <p>Neste exercicio vamos ver algumas tags do CSS, mas primeiro precisamos
+            saber como ele se estrutura</p>
+
+        <h2>01 - Aprendendo estruturas do CSS</h2>
+        <p>O CSS é dividido em 3 estruturas por ordem de prioridade:</p>
+
+        <h3>1.1 - Estrutura inline:</h3>
+        <p>Estrutura inline consiste em adicionar os estilos linha por linha
+            de seus codigos.</p>
+
+        <h3>1.2 - Estrutura interna:</h3>
+        <p>Estrutura interna consiste em adicionar uma tag &lt;style&gt; dentro
+            do head para e englobar os estilo de UMA pagina.</p>
+
+        <h3>1.3 - Estrutura externa:</h3>
+        <p>Estrutura externa consiste em um link no head que ira adicionar uma pagina
+            propria para configurar o estilo de todas as suas paginas adicionais.Vale criar
+            mais de um link em CSS.</p>
+
+        <hr>
+
+        <h2>02 - Aprendendo Cores</h2>
+        <p> Existem 4 formas de leitura das cores. São elas:</p>
+
+        <h3 style="background-color: #4B7CCC; color: white;"> 1.1 - Por nome:</h3>
+        <p>Digitando o nome das cores</p>
+        <p>Blue, white, Red.</p>
+
+
+        <h3 style="background-color: #4B7CCC; color: #ffffff;"> 1.2 - Por codigos hexadecimais:</h3>
+        <p>Usando a # e em seguida o codigo hexadecimal da cor desejada.</p>
+        <p>1,2,3,4,5,6,7,8,9,a,b,c,d,e,f</p>
+
+
+        <h3 style="background-color: rgb(75, 124, 204); color:rgb(255, 255, 255)"> 1.3 - Por RGB:</h3>
+        <p>Usando a tag "rgb" e em seguida colocando a quantidade de red, green, e blue que a cor desejada tem.</p>
+
+
+        <h3 style="background-color: hsl(217, 56%, 55%); color: hsl(0, 0%, 100%)"> 1.4 - Por HSL:</h3>
+        <p>Usando a tag hsl e em seguida colocando a quantidade de hue, sturation, e luminosity (Gradação, saturação,
+            e luminosidade) da cor desejada.</p>
+        <!--"a" no final de de todas as cores significa "Alfa" que significa o nivel de transparencia-->
+
+        <hr>
+
+        <h2>03 - Fontes</h2>
+        <p>Existem diferentes tipos de fontes com diferentes tipografias, e diferentes formas de configura-lás.</p>
+
+        <h3>Adicionando fonte:</h3>
+        <h4>Fontes externas:</h4>
+        <p>Para adicionar uma fonta externa, Vá em um site, cole a url da fonte. basta usar a tag: @ + import url,
+            depois adicionar o url da fonte</p>
+        exemplo:
+
+        <pre>
+                                <code>
+@import url('url do site')
+                                </code>
+                            </pre>
+
+
+        <h4>Fonte interna:</h4>
+        <p>Para adicionar uma fonte interna, baixamos a fonte no computador e usamos a tag @font-face, e depois o nome
+            exato do arquivo. Podendo adicionar varios formatos de arquivo para garantir o uso em diferentes
+            navegadores.</p>
+        Exemplo:
+
+        <pre>
+                                <code>
+@font-face {
+font-family: ;
+src: url('nome do arquivo fonte')
+format('depende do formato do arquivo'),  <!--Primeira fonte-->  
+url('nome do segundo arquivo fonte')      <!--segunda fonte-->   
+format('depende do formato do arquivo');
+}                               </code>
+                            </pre>
+        <p>Obs: Os formatos de arquivo de fonte mais conhecidos são:</p>
+        <ul>
+            <li>opentype (otf)</li>
+            <li>truetype (ttf)</li>
+            <li>embedded-opentype</li>
+            <li>truetype-aat (Aplee Advanced Typography)</li>
+            <li>svg</li>
+        </ul>
+
+
+        <h3>Tipografia:</h3>
+        <p>Tipografia é usar as variaveis de sua fonte.</p>
+        Exemplo:
+        <p style="font-weight: lighter;">Tipografia</p>
+        <p style="font-weight: normal;">Tipografia</p>
+        <p style="font-weight: bold;">Tipografia</p>
+        <p style="font-weight: bolder;">Tipografia</p>
+        <p>Dependendo da fonte voce pode usar as medidas 100 a 900</p>
+        Exemplo:
+        <p style="font-weight: 900;">Tipografia</p>
+
+
+        <h3>Configurações da fonte:</h3>
+        <p>Configurar uma fonte é ajustar o seu tamanho, familia, estilo e etc:</p>
+
+        <h4 style="font-size: 16px;">Tamanho:</h4>
+        <p>São duas medidas recomendados para o uso do tamanho de fonte, são elas: px e em. Sendo que 16px
+            é a medida padão de um site, e 1em é equivalente a 16px.</p>
+
+        <h4>Estilo:</h4>
+        <p>Sâo estilos que podemos aplicar, sublinhados, italicos, e etc.</p>
+        exemplo:
+        <p style="font-style: italic;">Estilo</p>
+        <p style="text-decoration: line-through;">Estilo</p>
+        <p style="text-decoration: underline;">Estilo</p>
+
+        <h4>Shorthands:</h4>
+        <p>Shorthands nada é que uma tecnica de abreviação pra configurar as fontes. Para o funcionamento correto
+            deve seguir a sequencia de: font-style > font-weight > font-size > font-family.</p>
+        exemplo:
+        <p style="font: italic bolder 3em serif">ShortHands</p>
+
+
+        <h3>Alinhamento:</h3>
+        <p>Podemos alinhar o texto com a tag: text-align</p>
+        Exemplo:
+        <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem libero
+            perspiciatis,
+            quia quas repellendus deserunt. Officiis necessitatibus, explicabo perferendis repellat obcaecati sequi quae
+            iure et
+            dolores dolorum a vero impedit?</p>
+        <hr>
+
+        <h2 id="exemplo">04 - Seletores personalizados</h2>
+        <p>São formas de te ajudar a editar o seu codigo no css. São ela:</p>
+
+
+        <h3 class="exemplo">Identificação:</h3>
+        <p> <span class="importante">Retratados como id no html e # no css</span> é usado para formatação de um elemento
+            unico.</p>
+        exemplo:
+        <p>&lt;h1 id="nome escolhido"&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis tempora
+            pariatur
+            sint enim veritatis vel iure dolorem itaque, maxime nisi omnis nihil suscipit placeat nemo odit at doloribus
+            cum
+            voluptas!&lt;/h1&gt;</p>
+
+
+        <h3 class="exemplo">Classes:</h3>
+        <p> <span class="importante"> Retratados como class no html e . no css</span> são usadas para formatação de mais
+            de uma elemento.
+            E um elemento pode ter duas classes.</p>
+        exemplo:
+        <p>&lt;h1 class="nome escolhido"&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+            tempora pariatur
+            sint enim veritatis vel iure dolorem itaque, maxime nisi omnis nihil suscipit placeat nemo odit at doloribus
+            cum
+            voluptas!&lt;/h1&gt;</p>
+
+
+        <h3 class="classes">Pseudo-classes ":"</h3>
+        <p> <span class="importante">Retratados como ":" na css</span>, são seletores que permitem aplicar animações e
+            estilos as classes.</p>
+        exemplo:
+        <div>
+            passe o mouse aqui
+            <p>texto escondido</p>
+        </div>
+
+
+        <h3>Pseudo-elementos</h3>
+        <p> <span class="importante">Retratados como "::" na css</span>, são seletores para adicionar mais interações.
+        </p>
+        exemplo:
+        <ul>
+            <li class="elementos">Aplicado</li>
+            <li>Sem aplicação</li>
+            <li class="elementos">Aplicado</li>
+        </ul>
+
+        <h2>05 - Caixas</h2>
+        <p>O css/html são configurados basicamente em dois formatos de caixas, veja como usa-las:</p>
+        <h3>Box-Level</h3>
+        <p>São caixas que pulam uma linha do paragrafo e ocupam toda a largura da pagina. Entre as tags box level estão:
+        </p>
+        <ul>
+            <li>&lt;div&gt;</li>
+            <li>&lt;h1-h6&gt;</li>
+            <li>&lt;p&gt;</li>
+            <li>&lt;main&gt;</li> <!--conteudo principal-->
+            <li>&lt;header&gt;</li> <!--Cabeçalho-->
+            <li>&lt;nav&gt;</li> <!--Menus-->
+            <li>&lt;article&gt;</li> <!--Artigos-->
+            <li>&lt;aside&gt;</li> <!--Filho de alguma tag-->
+            <li>&lt;footer&gt;</li> <!--Rodapé-->
+            <li>&lt;form&gt;</li>
+            <li>&lt;video&gt;</li>
+        </ul>
+        <p>Exemplo:</p>
+        <h5>Exemplo de box-level</h5>
+
+
+        <h3>Inline-level:</h3>
+        <p>São caixas que ocupam o espaço necessario, se mantendo dentro do paragrafo. Entre as tags inline-level estão:
+        </p>
+        <ul>
+            <li>&lt;span&gt;</li>
+            <li>&lt;a&gt;</li>
+            <li>&lt;code&gt;</li>
+            <li>&lt;small&gt;</li>
+            <li>&lt;strong&gt;</li>
+            <li>&lt;em&gt;</li>
+            <li>&lt;sup e sub&gt;</li>
+            <li>&lt;label&gt;</li>
+            <li>&lt;button&gt;</li>
+            <li>&lt;input&gt;</li>
+            <li>&lt;select&gt;</li>
+        </ul>
+        <p>Exemplo:</p>
+        <a href="https://www.cursoemvideo.com/">Links são exemplos de inline-level</a>
+
+        <hr>
+
+    </main>
+
+
+</body>

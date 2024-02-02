@@ -1,0 +1,46 @@
+IMAGENS:
+Sites indicados:
+
+- Pesquisa de imagens com direito de uso:
+ > unsplash - https://unsplash.com/pt-br
+ > pexels - https://www.pexels.com/pt-br
+ > Google imagens - usar as ferramentas 
+
+
+- Manipulação de imagens:
+ > GIMP é Um programa de manipulação de imagens gratuito
+ 
+
+- qual imagem usar no site:
+ > jpag - super compacto, baixa qualidade	 
+ > png - compacto, transparencia, media qualidade
+ > GIF - transparencia e animação
+
+
+- Adicionar icon em seu site:
+> baixar imagens prontas em formato de icon - https://www.iconarchive.com/
+> criar seu proprio icon - https://www.favicon.cc/
+> gerar um icon - https://favicon.io/
+
+
+Audio:
+-Sites indicados:
+>youtube.com - usar o youtube studio
+
+
+VIDEOS:
+sites indicados:
+> pexels - https://www.pexels.com/pt-br
+> youtube.com
+> vimeo - https://vimeo.com
+ 
+
+-Qual formatos de vídeo:
+>MP4
+
+>M4V
+
+>WebM 
+
+-Manipulação de vídeo:
+>Usar o handbrake

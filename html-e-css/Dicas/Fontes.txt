@@ -1,0 +1,23 @@
+Dicas de tipografia:
+
+Sites para pegar diferentes tipos de fonte:
+
+- https://fonts.google.com/
+Basta importar a fonte do site.
+
+- dafont.com/pt/
+Baixar o arquivo em TTF e OTF, descompactar e 
+colar dentro da pasta do exercicio.
+
+- Extensão Fonts ninja
+uma extensão do google pra pegar o nome da fonte usada em algum site.
+
+- Fontes de imagens:
+São sites que te permitem a achar a fonte usada em uma imagem
+sites:
+
+- whatfontsis.com
+
+- fontsquirrel.com
+
+- myfonts.com
