@@ -44,3 +44,6 @@ sites indicados:
 
 -Manipulação de vídeo:
 >Usar o handbrake
+
+-Criar QrCode
+> qr-code-generator.com
