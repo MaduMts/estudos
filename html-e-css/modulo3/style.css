@@ -1,20 +1,44 @@
 @charset "UTF-8";
 
+body{
+    background-image: url('midias/wallpaper001.jpg');
+    color: black;
+}
+
+main{
+    background-color: white; /*cor de fundo*/
+    border-radius: 10px;  /*Arredondar as bordas*/
+    box-shadow:5px 5px 15px black; /*adicionar sombras*/
+    width: 650px; /*controla a largura de um elemento*/
+    padding: 10px; /*controla o espaço entre o conteúdo interno de um elemento e sua borda.*/
+    margin: auto /*sua caixa fica automaticamente no meio*/
+}
+
+p{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+h1{
+    text-align: center;
+}
+
 div.quadrado {
     display: inline-block;
     border: 1px solid black;
     border-radius: 10px;
-    width: 300px;
-    height: 300px; 
+    width: 212px; /*largura*/
+    height: 200px; /*altura*/
 }
 
 div#q1{
-    background-color: skyblue;
+    background-image: url('midias/pattern003.png');
 }
 
 div#q2{
-    background-image: linear-gradient(to bottom, skyblue, blue);
+    background-image: linear-gradient(to bottom, skyblue, white);
 }
 
 div#q3{
     background-image: url('midias/pattern001.png');
+}
