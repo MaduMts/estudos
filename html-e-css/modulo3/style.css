@@ -16,6 +16,5 @@ div#q2{
     background-image: linear-gradient(to bottom, skyblue, blue);
 }
 
-div#q3(
-    background-image: url
-)
+div#q3{
+    background-image: url('midias/pattern001.png');
