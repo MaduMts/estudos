@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
+/*Configurando a pagina:*/
 body{
+    background-image: url('midias/alfinete-vermelho.jpg');
     background-image: url('midias/wallpaper001.jpg');
     color: black;
 }
@@ -23,12 +25,13 @@ h1{
     text-align: center;
 }
 
+/*Configurando as divs:*/
 div.quadrado {
     display: inline-block;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 10px; /*Arredondar bordas*/
     width: 212px; /*largura*/
-    height: 200px; /*altura*/
+    height: 150px; /*altura*/
 }
 
 div#q1{
@@ -42,3 +45,19 @@ div#q2{
 div#q3{
     background-image: url('midias/pattern001.png');
 }
+
+div#q4{
+    background-image: url('midias/pattern003.png');
+    background-repeat: no-repeat; /*Não repetir*/
+}
+
+div#q5{
+    background-image: url('midias/pattern002.png');
+    background-repeat: repeat-x; /*Repetir na horizontal*/
+}
+
+div#q6{
+    background-image: url('midias/pattern001.png');
+    background-repeat: repeat-y; /*Repetir na vertival*/
+}
+/*Ps: backgroud size edita o tamanho das imagens*/
