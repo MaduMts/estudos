@@ -2,13 +2,16 @@
 
 /*Configurando a pagina:*/
 body{
-    background-image: url('midias/alfinete-vermelho.jpg');
     background-image: url('midias/wallpaper001.jpg');
     color: black;
 }
 
 main{
-    background-color: white; /*cor de fundo*/
+    background-image: url('midias/Alfinete-realista.png');
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #E5E7E6; /*cor de fundo*/
     border-radius: 10px;  /*Arredondar as bordas*/
     box-shadow:5px 5px 15px black; /*adicionar sombras*/
     width: 650px; /*controla a largura de um elemento*/
