@@ -28,7 +28,7 @@ h1{
     text-align: center;
 }
 
-/*Configurando as divs:*/
+/*Configurando as classes das divs:*/
 div.quadrado {
     display: inline-block;
     border: 1px solid black;
@@ -37,13 +37,6 @@ div.quadrado {
     height: 150px; /*altura*/
 } /*Ps: backgroud size edita o tamanho das imagens*/
 
-div.quadrado2 {
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 10px; /*Arredondar bordas*/
-    width: 212px; /*largura*/
-    height: 180px; /*altura*/
-}
 
 /*01 - BACKGROUND-IMAGE*/
 div#q1{
@@ -78,26 +71,45 @@ div#q6{
 
 /*03 - BACKGROUND-POSITION*/
 div#q7{
-    background-image: url('midias/wallpaper003.jpg');
+    background-image: url('midias/wallpaper007.jpg');
 }
 
 div#q8{
-    background-image: url('midias/wallpaper003.jpg');
+    background-image: url('midias/wallpaper007.jpg');
     background-position: center top;    
 }
 
 div#q9{
-    background-image: url('midias/wallpaper003.jpg');
+    background-image: url('midias/wallpaper007.jpg');
+    background-position: top right;
 }
 
 div#q10{
-    background-image: url('midias/wallpaper003.jpg');
+    background-image: url('midias/wallpaper007.jpg');
+    background-position: left center;
 }
 
 div#q11{
-    background-image: url('midias/wallpaper003.jpg');
+    background-image: url('midias/wallpaper007.jpg');
+    background-position: center center;
 }
 
 div#q12{
-    background-image: url('midias/wallpaper003.jpg'); 
+    background-image: url('midias/wallpaper007.jpg');
+    background-position: center right; 
+}
+
+div#q13{
+    background-image: url('midias/wallpaper007.jpg');
+    background-position: left bottom;
+}
+
+div#q14{
+    background-image: url('midias/wallpaper007.jpg');
+    background-position: bottom center;
+}
+
+div#q15{
+    background-image: url('midias/wallpaper007.jpg');
+    background-position: bottom right;
 }
