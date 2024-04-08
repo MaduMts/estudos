@@ -35,8 +35,17 @@ div.quadrado {
     border-radius: 10px; /*Arredondar bordas*/
     width: 212px; /*largura*/
     height: 150px; /*altura*/
+} /*Ps: backgroud size edita o tamanho das imagens*/
+
+div.quadrado2 {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px; /*Arredondar bordas*/
+    width: 212px; /*largura*/
+    height: 180px; /*altura*/
 }
 
+/*01 - BACKGROUND-IMAGE*/
 div#q1{
     background-image: url('midias/pattern003.png');
 }
@@ -49,6 +58,8 @@ div#q3{
     background-image: url('midias/pattern001.png');
 }
 
+
+/*02 - BACKGROUND-REPEAT*/
 div#q4{
     background-image: url('midias/pattern003.png');
     background-repeat: no-repeat; /*Não repetir*/
@@ -63,4 +74,30 @@ div#q6{
     background-image: url('midias/pattern001.png');
     background-repeat: repeat-y; /*Repetir na vertival*/
 }
-/*Ps: backgroud size edita o tamanho das imagens*/
+
+
+/*03 - BACKGROUND-POSITION*/
+div#q7{
+    background-image: url('midias/wallpaper003.jpg');
+}
+
+div#q8{
+    background-image: url('midias/wallpaper003.jpg');
+    background-position: center top;    
+}
+
+div#q9{
+    background-image: url('midias/wallpaper003.jpg');
+}
+
+div#q10{
+    background-image: url('midias/wallpaper003.jpg');
+}
+
+div#q11{
+    background-image: url('midias/wallpaper003.jpg');
+}
+
+div#q12{
+    background-image: url('midias/wallpaper003.jpg'); 
+}
