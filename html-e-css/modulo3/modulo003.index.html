@@ -21,8 +21,7 @@
         </h1>
                 
             <h2>
-                01 - 
-                Imagens de fundo:
+                Apofundando conhecimento em Imagens de fundo:
             </h2>
             <p>
                 Neste capitulo vamos aprender novas tecnicas para mexer com 
@@ -30,7 +29,7 @@
             </p>
             
                 <h3>
-                    Editando com backgroud-image e backgroud-color:
+                   01 - Editando com backgroud-image e backgroud-color:
                 </h3>
                     <p>
                     Como já sabemos podemos usar ferramentas para adicionar imagens locais,
@@ -47,7 +46,7 @@
 
                 
                 <h3>
-                 Editando com o backgound-repeat:   
+                  02 - Editando com o backgound-repeat:   
                 </h3>
                     <p>
                         Por padrão as imagens pequenas se repetem, nós podemos configurar essa 
@@ -63,11 +62,11 @@
                     </div>
 
                 <H3>
-                    Editando com o background-position
+                  03 - Editando com o background-position
                 </H3>
                     <p>
                         Quando a imagem é maior que o fundo, por padrão são organizadas de cima para baixo, 
-                        e da esquesrda para a direita, nos podemos determinar a posição delas:
+                        e da esquesrda para a direita. Nos podemos determinar a posição delas:
                     </p>
                     <div class="quadrado" id="q7">
                     </div>
@@ -96,5 +95,73 @@
                     <div class="quadrado" id="q15">
                     </div>
 
+                <h3>
+                    04 - Dicas para background-size, background-attachment e ShortHands:
+                </h3>
+                    <p>
+                        Aqui vamos dar dicas de todos os background acimas para auxilio de um site responsivo:
+                        <br>
+                        ps: É importante você configurar a pagina com a height: 100vh (100 da altura da viewport)
+                    </p>
+                        
+                        <h4>
+                            Background-size:
+                        </h4>
+                            <ul>
+                                <li>
+                                    background-size:100% 100% (largura e altura)
+                                    <br> 
+                                     Faz com que a imagem fique com 100% da tela, mas nao é a melhor opção para todas 
+                                    as imagens de fundo, pois ela distorce a imagem.
+                                </li>
+                                <br>
+                                
+                                <li>
+                                    background-size: contain; 
+                                    <br>
+                                     Essa opção exibe a imagem toda, porem não se adapta 100% ao tamanho
+                                    das posiveis telas(viewport). Bom usar em casos de pequenas imagens em sites, não em imagens de fundo.
+                                </li>
+                                <br>
+                                
+                                <li>
+                                    background-size: cover;: 
+                                    <br>
+                                     Essa opção adapta a imagem de fundo ao viewport da tela, cortando a 
+                                    imagem se necessario, porem se for uma imagem pequena, não funciona muito bem.
+                                   
+                                </li>
+                            </ul>
+                        <h4>
+                            Background-attachment:
+                        </h4>
+                            <ul>
+                                <li>
+                                    background-attachment: scroll;
+                                    <br> 
+                                    O fundo rola junto com o conteudo
+                                </li>
+                                <br>
+                                
+                                <li>
+                                    background-attachment: fixed;
+                                    <br>
+                                    O fundo fica fixo, e apenas o conteudo rola. Otima ferramenta para se usar com o background-size: cover;
+                                </li>
+                            </ul>
+
+                        <h4>
+                            ShortHands do background:
+                        </h4>
+                            Como já sabemos o shorthands são formas de resumir todas as configurações, a função background tem tantos detalhes
+                            que existe um shorthand só para ele. Aqui vai a sequencia:
+                            <br>
+                            <br>
+                            color > image > position > repeat > [size] > attachment 
+                            <p>
+                            exemplo:
+                            </p> 
+                            background: black url('midias/wallpaper002.jpg') center center no repeat fixed;
+                            <!--No dia que saiu o video sobre shorthands o size ainda não estava funcionando, por isso era posto a parte.-->
     </main>
 </body

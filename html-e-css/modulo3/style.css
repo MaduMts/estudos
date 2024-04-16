@@ -14,7 +14,7 @@ main{
     background-color: #E5E7E6; /*cor de fundo*/
     border-radius: 10px;  /*Arredondar as bordas*/
     box-shadow:5px 5px 15px black; /*adicionar sombras*/
-    width: 650px; /*controla a largura de um elemento*/
+    max-width: 650px; /*controla a largura de um elemento*/ /* O 'MAX' em frente do width deixa quebrar em caso de pequenas telas. */
     padding: 10px; /*controla o espaço entre o conteúdo interno de um elemento e sua borda.*/
     margin: auto /*sua caixa fica automaticamente no meio*/
 }
