@@ -21,7 +21,7 @@
         </h1>
                 
             <h2>
-                Apofundando conhecimento em Imagens de fundo:
+               01 - Apofundando conhecimento em Imagens de fundo:
             </h2>
             <p>
                 Neste capitulo vamos aprender novas tecnicas para mexer com 
@@ -29,7 +29,7 @@
             </p>
             
                 <h3>
-                   01 - Editando com backgroud-image e backgroud-color:
+                   1.1 - Editando com backgroud-image e backgroud-color:
                 </h3>
                     <p>
                     Como já sabemos podemos usar ferramentas para adicionar imagens locais,
@@ -46,7 +46,7 @@
 
                 
                 <h3>
-                  02 - Editando com o backgound-repeat:   
+                  1.2 - Editando com o backgound-repeat:   
                 </h3>
                     <p>
                         Por padrão as imagens pequenas se repetem, nós podemos configurar essa 
@@ -62,7 +62,7 @@
                     </div>
 
                 <H3>
-                  03 - Editando com o background-position
+                  1.3 - Editando com o background-position
                 </H3>
                     <p>
                         Quando a imagem é maior que o fundo, por padrão são organizadas de cima para baixo, 
@@ -96,7 +96,7 @@
                     </div>
 
                 <h3>
-                    04 - Dicas para background-size, background-attachment e ShortHands:
+                    1.4 - Dicas para background-size, background-attachment e ShortHands:
                 </h3>
                     <p>
                         Aqui vamos dar dicas de todos os background acimas para auxilio de um site responsivo:
@@ -112,7 +112,8 @@
                                     background-size:100% 100% (largura e altura)
                                     <br> 
                                      Faz com que a imagem fique com 100% da tela, mas nao é a melhor opção para todas 
-                                    as imagens de fundo, pois ela distorce a imagem.
+                                    as imagens de fundo, pois ela aumenta e diminue de acordo com a viewport e 
+                                    distorce a imagem.
                                 </li>
                                 <br>
                                 
@@ -163,5 +164,67 @@
                             </p> 
                             background: black url('midias/wallpaper002.jpg') center center no repeat fixed;
                             <!--No dia que saiu o video sobre shorthands o size ainda não estava funcionando, por isso era posto a parte.-->
+            
+            <h2>
+                02 - Centralização de caixas na vertical:
+            </h2>
+                <p>
+                    Neste capitulo vamos dar uma boa dica para a centralização de caixas.
+                    Aqui vai o passo a passo:
+                </p> 
+                
+                <ul>
+                    <li>
+                        <p>
+                        passo 01:
+                        </p>
+                            Faça duas caixas/codigo no html, e as nomeia exemplo:
+                            <br>
+                            article id="container"
+                            <br>
+                            section id="conteudo"
+                            <br>
+                            /section
+                            <br>
+                            /article
+                    </li>
+                
+                    <li>
+                        <p>
+                        Passo 02:
+                        </p>
+                            No css:
+                            <br>
+                            O #container deve ser colocada como position: relative;. Isso faz com que a
+                            caixa se adapte ao viewport
+                            <br>
+                            O #conteudo deve ser colocada como position: absolute;. isso faz com que a 
+                            posição da caixa nâo mude dentro do container.
+                    </li>
+
+                    <li>
+                        <p>
+                        Passo 03:
+                        </p>
+                            Ainda no css:
+                            <br>
+                            Agora para mover o conteudo podemos usar duas formas:
+                            <br>
+                            - Configurando o left e o top
+                            <br>
+                            - Usando a propriedade: transforme: translate(- ou + 1%, - ou + 1%). Ps: Os
+                            valores dentro do () dependem de onde você pretende posicionar a imagem.  
+                    </li>
+                </ul>
+                <p>
+                    Exemplo:
+                </p>
+                <article id="container">
+                    <section id="conteudo">
+                    </section>
+                </article>
+                
     </main>
+
+    
 </body

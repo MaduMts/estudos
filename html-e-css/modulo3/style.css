@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*Configurando a pagina:*/
+/*Configurações principais da pagina:*/
 body{
     background-image: url('midias/wallpaper001.jpg');
     color: black;
@@ -28,6 +28,8 @@ h1{
     text-align: center;
 }
 
+
+
 /*Configurando as classes das divs:*/
 div.quadrado {
     display: inline-block;
@@ -38,7 +40,8 @@ div.quadrado {
 } /*Ps: backgroud size edita o tamanho das imagens*/
 
 
-/*01 - BACKGROUND-IMAGE*/
+
+/*1.1 - BACKGROUND-IMAGE:*/
 div#q1{
     background-image: url('midias/pattern003.png');
 }
@@ -52,7 +55,8 @@ div#q3{
 }
 
 
-/*02 - BACKGROUND-REPEAT*/
+
+/*1.2 - BACKGROUND-REPEAT:*/
 div#q4{
     background-image: url('midias/pattern003.png');
     background-repeat: no-repeat; /*Não repetir*/
@@ -69,7 +73,8 @@ div#q6{
 }
 
 
-/*03 - BACKGROUND-POSITION*/
+
+/*1.3 - BACKGROUND-POSITION:*/
 div#q7{
     background-image: url('midias/wallpaper007.jpg');
 }
@@ -112,4 +117,30 @@ div#q14{
 div#q15{
     background-image: url('midias/wallpaper007.jpg');
     background-position: bottom right;
+}
+
+
+
+/*1.4 - Background-size, Background-attachment e Shorthands:*/
+
+
+
+/*CAPITULO O2 - CENTRALIZAÇÃO DE CAIXAS:*/
+
+article#container{
+    background-color: blueviolet;
+    background-image: url('midias/target001.png');
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+
+    position: relative;
+}
+
+section#conteudo {
+    background-color: yellow;
+    background-image: url('midias/target001.png');
+    background-size: 100% 100%;
+    
+    position: absolute;
 }
