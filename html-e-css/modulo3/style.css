@@ -130,10 +130,11 @@ div#q15{
 article#container{
     background-color: blueviolet;
     background-image: url('midias/target001.png');
-    width: 100%;
-    height: 100vh;
     background-size: 100% 100%;
-
+    
+    height: 90vh;
+    padding: 10px;
+    background-size: 100% 100%;
     position: relative;
 }
 
@@ -142,5 +143,15 @@ section#conteudo {
     background-image: url('midias/target001.png');
     background-size: 100% 100%;
     
+    height: 200px;
+    width: 200px;
     position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+/*Aqui para deixar o site responsivo e o section ficar sempre no meio combamos o left e top com o tranform.
+Com essa configuração o section ficará sempre no meio da tela, independente do tamanho da tela.*/
 }
+
