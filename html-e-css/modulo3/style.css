@@ -151,7 +151,6 @@ section#conteudo {
     top: 50%;
 
     transform: translate(-50%, -50%);
+}
 /*Aqui para deixar o site responsivo e o section ficar sempre no meio combamos o left e top com o tranform.
 Com essa configuração o section ficará sempre no meio da tela, independente do tamanho da tela.*/
-}
-
