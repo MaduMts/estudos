@@ -1,15 +1,29 @@
 @charset "UTF-8";
 
+/*IMPORTANDO AS FONTES DA WEEB:*/
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+
+/*FAZENDO AS VAREAVEIS DO SITE*/
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 
 /*CONFIGURAÇÕES PRINCIPAIS*/
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh; /*Tamanho minimo do bory vai ser 100% da altura da minha viewport*/
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 
@@ -23,6 +37,8 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps; /*Deixa a letra em maiusculo*/
+    font-family: var(--fonte2);
+    font-size: 10vw; /*10% da viewport width, uma maneira de deixa ro site responsivo*/
 }
 /*Dica para deixar todas as letras em maiuscula de outra forma:
 text-tranform: uppercase;*/
@@ -50,6 +66,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 section.normal{
@@ -63,7 +81,8 @@ section.imagem{
 }
 
 section.imagem > p {
-    width:400px;
+    display: inline-block; /*Cria uma caixa que se adapta com o tamanho do conteudo interno*/
+    padding: 5px; /*espaçamento interno*/
     background-color: rgba(0, 0, 0, 0.253);
 } /*fazendo uma caixa no paragrafo da section imagem*/
 
