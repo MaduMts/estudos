@@ -3,44 +3,62 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aula 001 JavaScript</title>
-        <style>
-            Body {
-                background-color: rgb(105, 105, 173);
-                color: white;
-                font: normal 20pt Arial;
-            }
-        </style>
+        <title>Curso de JavaScript</title>
+        <link rel="stylesheet" href="style.css">
     </head>
+    
     <body>
-        <h1>
-            Colocando  o primeiro codigo JavaScript no site:
-        </h1>
-
-        
-            <h2>
-                Tratando strings em JavaScript:
-            </h2>
-                <p>
-                    Podemos usar o prompt para adicionar uma variavel no site e manipular de varias fromas, exemplo:
-                </p>
-                
-                <script>
-                    var nome = window.prompt('Qual é o seu nome?') //atribuindo o prompt para a variavel nome//
-                    window.alert('Prazer em te conhecer,' + nome) //adicionando um alerta com a variavel do prompt//
-                    
-                    document.write(`Olá <strong>${nome}</strong>. Seu nome tem: ${nome.length} letras. <br>`) //adicionando um texto//
-                    document.write(`Seu nome em maiusculas é: ${nome.toUpperCase()} <br>`) //adicionando um texto em maiusculas//
-                    document.write(`Seu nome em minusculas é: ${nome.toLowerCase()} <br>`) //adicionando um texto em minusculas//
-                </script> 
-                    
-                    <!-- EXEMPLO DE COMO CONVERTER STRING PARA NUMBER:
-                    <script>
-                        -> var n1 = window.prompt('Digite um numero: ') <-conversõa direto na recepeção da variavel
-                        var n2 = window.prompt('Digite outro numero: ')
-                        -> var soma = Number(n1) + Number(n2) <---        conversão na linha de soma
-                        window.alert('A soma entre ${n1} e ${n2} é igual a ${soma}')
-                    </script> 
-                    -->
+        <main>
+            
+            <h1>
+                 Curso de JavaScript do |Curso em Video|
+            </h1>
+            
+                <h2>
+                    1 - Tipos primitivos em JavaScript:
+                 </h2>
+                    <p>
+                        JavaScript é uma linguagem que tem tipagem dinamica, ou seja, não precisamos declarar o tipo de variavel que estamos usando,
+                        o proprio JavaScript faz isso por nós. Porem é necessario entender esses tipos primitivos para que possamos manipular de
+                        forma correta. E são eles:
+                        <br>
+                        <strong>String</strong> - Texto
+                        <br>
+                        <strong>Number</strong> - Número
+                        <br>
+                        <strong>Boolean</strong> - Lógico
+                        <br>
+                        <strong>Null</strong> - Nulo
+                        <br>
+                        <strong>Undefined</strong> - Não definido
+                    </p>
+            
+                    <h3>
+                        1.1 Tipo strings em JavaScript:
+                    </h3>
+                        <p>
+                            String basicamente é a manipulação de textos. Exemplo: Podemos usar o prompt para adicionar uma variavel no site e manipular
+                            de varias formas.
+                        </p>
+            
+                        <script>
+                            var nome = window.prompt('Qual é o seu nome?') //atribuindo o prompt para a variavel nome//
+                            window.alert('Prazer em te conhecer, ' + nome) //adicionando um alerta com a variavel do prompt//
+            
+                            document.write(`Olá <strong>${nome}</strong>. Seu nome tem: ${nome.length} letras. <br>`) //adicionando um texto//
+                            document.write(`Seu nome em maiusculas é: ${nome.toUpperCase()} <br>`) //adicionando um texto em maiusculas//
+                            document.write(`Seu nome em minusculas é: ${nome.toLowerCase()} <br>`) //adicionando um texto em minusculas//
+                        </script>
+            
+                        <h3>
+                            1.2 - Tipo number em JavaScript:
+                        </h3>
+                            <script>
+                                var n1 = window.prompt('Digite um numero: ') //conversõa direto na recepeção da variavel//
+                                var n2 = window.prompt('Digite outro numero: ')
+                                var soma = Number(n1) + Number(n2)          //conversão na linha de soma//
+                                documente.write(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+                            </script>
+        </main>           
     </body>
 </html>

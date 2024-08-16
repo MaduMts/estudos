@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+Body {
+    background-color: white;
+    color: white;
+    font: normal 20pt Arial;
+}
+
+main{
+    background-color:  rgb(105, 105, 173); /*cor de fundo*/
+    border-radius: 10px;  /*Arredondar as bordas*/
+    box-shadow:5px 5px 15px rgba(105, 105, 173, 0.69); /*adicionar sombras*/
+    width: 600px; /*controla a largura de um elemento*/
+    padding: 10px; /*controla o espaço entre o conteúdo interno de um elemento e sua borda.*/
+    margin: auto /*sua caixa fica automaticamente no meio*/
+}
+
+h1{
+    text-align: center;
+}

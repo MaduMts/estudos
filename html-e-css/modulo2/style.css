@@ -147,7 +147,7 @@
     }/*É possivel fazer um shorthands com as configurações da borda, seguindo essa exata ordem que foi escrita.*/
 
 
-    /*Iline-level*/
+    /*Inline-level*/
     a{
         /*DICA: display: block; -> Isso transforma a caixa inline em box. Pode aplicar o inline no box tambem.*/
         border-width: 10px;
