@@ -1,64 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Curso de JavaScript</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    
-    <body>
-        <main>
-            
-            <h1>
-                 Curso de JavaScript do |Curso em Video|
-            </h1>
-            
-                <h2>
-                    1 - Tipos primitivos em JavaScript:
-                 </h2>
-                    <p>
-                        JavaScript é uma linguagem que tem tipagem dinamica, ou seja, não precisamos declarar o tipo de variavel que estamos usando,
-                        o proprio JavaScript faz isso por nós. Porem é necessario entender esses tipos primitivos para que possamos manipular de
-                        forma correta. E são eles:
-                        <br>
-                        <strong>String</strong> - Texto
-                        <br>
-                        <strong>Number</strong> - Número
-                        <br>
-                        <strong>Boolean</strong> - Lógico
-                        <br>
-                        <strong>Null</strong> - Nulo
-                        <br>
-                        <strong>Undefined</strong> - Não definido
-                    </p>
-            
-                    <h3>
-                        1.1 Tipo strings em JavaScript:
-                    </h3>
-                        <p>
-                            String basicamente é a manipulação de textos. Exemplo: Podemos usar o prompt para adicionar uma variavel no site e manipular
-                            de varias formas.
-                        </p>
-            
-                        <script>
-                            var nome = window.prompt('Qual é o seu nome?') //atribuindo o prompt para a variavel nome//
-                            window.alert('Prazer em te conhecer, ' + nome) //adicionando um alerta com a variavel do prompt//
-            
-                            document.write(`Olá <strong>${nome}</strong>. Seu nome tem: ${nome.length} letras. <br>`) //adicionando um texto//
-                            document.write(`Seu nome em maiusculas é: ${nome.toUpperCase()} <br>`) //adicionando um texto em maiusculas//
-                            document.write(`Seu nome em minusculas é: ${nome.toLowerCase()} <br>`) //adicionando um texto em minusculas//
-                        </script>
-            
-                        <h3>
-                            1.2 - Tipo number em JavaScript:
-                        </h3>
-                            <script>
-                                var n1 = window.prompt('Digite um numero: ') //conversõa direto na recepeção da variavel//
-                                var n2 = window.prompt('Digite outro numero: ')
-                                var soma = Number(n1) + Number(n2)          //conversão na linha de soma//
-                                documente.write(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
-                            </script>
-        </main>           
-    </body>
-</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>
+            Curso de JavaScript do |Curso em Video|
+        </h1>
+
+        <h2>
+            1 - Tipos primitivos em JavaScript:
+        </h2>
+        <p>
+            JavaScript é uma linguagem que tem tipagem dinamica, ou seja, não precisamos declarar o tipo de variavel que
+            estamos usando,
+            o proprio JavaScript faz isso por nós. Porem é necessario entender esses tipos primitivos para que possamos
+            manipular de
+            forma correta. E são eles:
+            <br>
+            <br>
+            <strong>String</strong> - Texto
+            <br>
+            <strong>Number</strong> - Número
+            <br>
+            <strong>Boolean</strong> - Lógico
+            <br>
+            <strong>Null</strong> - Nulo
+            <br>
+            <strong>Undefined</strong> - Não definido
+            <br>
+            <strong>Object</strong> - Objeto
+            <br>
+            <strong>Symbol</strong> - Simbolo
+            <br>
+            <br>
+            Vamos ver alguns exemplos de como manipular esses tipos:
+        </p>
+
+        <h3>
+            1.1 Tipo strings em JavaScript:
+        </h3>
+        <p>
+            Strings basicamente é a manipulação de textos, o padrão o JS entender que tudo é string, por isso muitas
+            vezes
+            não precisamos determinar isso na variavel. Como exemplo usamos o prompt para adicionar uma variavel no site
+            e manipular de varias formas:
+            <br>
+            ps: Caso queira Garantir que a variavel seja uma string podemos usar o String().
+        </p>
+        <script>
+            var nome = window.prompt('Qual é o seu nome?') //atribuindo o prompt para a variavel nome//
+            //window.alert('Prazer em te conhecer, ' + String(nome)) - adicionando um alerta com a variavel do prompt////usando o String() para reforçar que é uma string//
+            //document.write para adicionar um texto a tela//                                                       
+            document.write(`Olá <strong>${nome}</strong>. Prazer em te conhecer!! <br> Seu nome tem: ${nome.length} letras. <br>`) //adicionando um texto// //.length para contar as letras//
+            document.write(`Seu nome em maiusculas é: ${nome.toUpperCase()} <br>`) //adicionando um texto em maiusculas// //.toUpperCase para deixar em maiusculas//
+            document.write(`Seu nome em minusculas é: ${nome.toLowerCase()} <br>`) //adicionando um texto em minusculas// //.toLowerCase para deixar em minusculas//
+        </script>
+
+        <h3>
+            1.2 - Tipo number em JavaScript:
+        </h3>
+        <p>
+            Usamos o Number para a manipulação de numeros em geral, e existe algumas formas de trabalhar com eles,
+            aqui vamos ver algumas delas:
+            <br>
+            <strong>Aritmeticos</strong> - de ponto flutuante, inteiros
+            <br>
+            <strong>Atribuição</strong> - Adição, Subtração, Multiplicação, Divisão, Resto, Exponenciação
+            <br>
+            <strong>Relacionais</strong> - >, <,>=, <=,==,===, !=, !==<br>
+            <strong>Lógicos</strong> - E &&, OU ||, NÃO !
+            <br>
+            <strong>Ternário</strong> - Condição ? Verdadeiro : Falso
+            <br>
+            <strong>Incremento</strong> - n += 1, n -= 1 ou n++, n--
+            <br>
+        </p>
+
+        <h4>
+            1.2.1 - Aritmeticos, Atribuição e Incremento:
+        </h4>
+        <p>
+            Por padrão JS diferencia numeros inteiros de numeros decimais só com a tag "number", mas para confirmar
+            basta usar parseInt para numeros inteiros, e o parseFloat para numeros decimais. Tambem podemos fazer
+            calculos e fazer configurações.
+            Veja os exemplos usando os numeros do prompt:
+        </p>
+        <script>  // window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`) - Para Adicionar um alerta com a soma //
+            var n1 = parseInt(window.prompt('Digite um número: ')) // Conversão direta na recepção da variável //
+            var n2 = parseFloat(window.prompt('Digite outro número: ')) // Usando parseFloat para permitir decimais //
+
+            var soma = n1 + n2 // Soma dos valores //
+            document.write(`- A soma entre ${n1} e ${n2} é igual a: ${soma} <br>`) // Adicionando a soma na tela //
+
+            var sub = n1 - n2 // Subtração dos valores//
+            document.write(`- A subtração entre ${n1} e ${n2} é igual a: ${sub} <br>`)
+
+            var mult = n1 * n2 // Multiplicação dos valores //
+            document.write(`- A multiplicação entre ${n1} e ${n2} é igual a: ${mult} <br>`)
+
+            var div = n1 / n2 //Divisão dos valores//
+            document.write(`- A divisão entre ${n1} e ${n2} é igual a: ${div} <br>`)
+
+            var rest = n1 % n2 // Resto da divisão dos valores //
+            document.write(`- O resto da divisão entre ${n1} e ${n2} é igual a: ${rest} <br>`)
+
+            var expo = n1 ** n2 // Exponenciação dos valores //
+            document.write(`- A exponeciação entre ${n1} e ${n2} é igual a: ${expo} <br>`)
+
+
+        </script>
+        <p>
+            Vale ressaltar que o JS segue a ordem matemática de prioridade, ou seja, sempre se resolve em ordem:
+        </p>
+        <ul>
+            <li>Parenteses ()</li>
+            <li>Exponenciação **</li>
+            <li>Multiplicação * , Divisão / e Resto da divisão %</li>
+            <li>Soma + e Subtração -</li>
+            <li> Maior >, Menor <, Maior igual >=, Menor igual <=, Igual ==, Identico ===, Diferente !=, e Não identico !==</li>
+            <li>Não !</li>
+            <li>E &&</li>
+            <li>Ou ||</li>
+            <li>Condição ? Verdadeiro : Falso</li>
+        </ul>
+    </main>
+</body>
+
+</html
