@@ -17,6 +17,7 @@ print('''OPÇÕES:
     [ 2 ] TESOURA''')
 
 jog = int(input('Qual a sua jogada? 0, 1 ou 2?'))
+pc = randint(0, 2)
 
 print('JO')
 sleep(0.5)
@@ -25,15 +26,20 @@ sleep(0.5)
 print('PÔ')
 sleep(0.5)
 
-pc = randint(0, 2)
-print('O computador jogou: {} e você: {}!!'.format(itens[pc], itens[jog]))
 
 if pc == 0 and jog == 2 or pc == 1 and jog == 0 or pc == 2 and jog == 1:
     print('Infelizmente você perdeu!!')
+
+    print('O computador jogou: {} e você: {}!!'.format(itens[pc], itens[jog]))
 elif pc == 2 and jog == 0 or pc == 0 and jog == 1 or pc == 1 and jog == 2:
     print('PARABENS!! Você Ganhou!!')
+
+    print('O computador jogou: {} e você: {}!!'.format(itens[pc], itens[jog]))
 elif pc == 0 and jog == 0 or pc == 1 and jog == 1 or pc == 2 and jog == 2:
     print('Deu empate!')
+    print('O computador jogou: {} e você: {}!!'.format(itens[pc], itens[jog]))
+
 else:
     print('Opção invalida!!')
+
 print(40 * '=')
