@@ -9,7 +9,7 @@ print('')
 print('MODULOS: são extensões da linguagem, utilizados para facilitar o desenvolvimento. temos diversos tipo de modulos.')
 print('')
 
-print('BIBLIOTECAS:São conjuntos de módulos relacionados que são organizados para atender a um propósito específico. Em outras palavras, uma biblioteca é uma coleção de módulos que fornecem funcionalidades para resolver problemas ou realizar tarefas específicas.')
+print('BIBLIOTECAS: São conjuntos de módulos relacionados que são organizados para atender a um propósito específico. Em outras palavras, uma biblioteca é uma coleção de módulos que fornecem funcionalidades para resolver problemas ou realizar tarefas específicas.')
 print('')
 
 print('PS: Para usar esses modulos usamos a ferramneta *import*')
